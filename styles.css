@@ -1,0 +1,995 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        ". logo nav";
+    justify-items: center;
+    align-items: center;
+}
+
+#inicio {
+    grid-area: logo;
+}
+
+.header-nav {
+    grid-area: nav;
+    width: 100%;
+    margin-right: 10px;
+}
+
+.header-nav>ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-nav li {
+    list-style: none;
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: #707070;
+    font-size: 25px;
+    position: relative;
+}
+
+.header-nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #d7161a;
+    transition: width .3s ease-in-out;
+}
+
+.header-nav a:hover::after {
+    width: 100%;
+
+}
+
+
+.main-hero {
+    background-color: #070707;
+    display: flex;
+    justify-content: center;
+}
+
+.main-hero-div-tittle {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 45px;
+    font-weight: bold;
+    color: #FBF6F6;
+    text-shadow: #FCF9F9 0px 0px 2px;
+    line-height: 80px;
+}
+
+.parte2 {
+    margin-top: 20px;
+    margin-left: 2px;
+}
+
+.main-hero-subtittle {
+    margin-top: 20px;
+    font-size: 35px;
+    color: #DC2B3D;
+    font-weight: normal;
+}
+
+.main-hero-img {
+    width: 100%;
+}
+
+.quienes-section {
+    max-width: 1500px;
+    margin: 30px auto;
+}
+
+.quienes-section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quienes-section-img-container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+}
+
+.quienes-section-img-container div {
+    background-color: #DC2B3D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 276px;
+    height: 381px;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+.quienes-section-img-container>img {
+    max-height: 300px;
+    position: absolute;
+    left: 55%;
+    top: 10%;
+    background-color: #fff;
+    padding: 5px;
+}
+
+.quienes-section-text-container div {
+    -webkit-mask-position-x: 552px;
+}
+
+.quienes-section-text-container h2 {
+    color: #707070;
+    font-size: 35px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.quienes-section-text-container p {
+    color: #707070;
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 35px;
+}
+
+.somos-section {
+    max-width: 1500px;
+    margin: 60px auto;
+}
+
+.somos-section h2 {
+    text-align: center;
+    color: #DC2B3D;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.somos-section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.somos-section-container>img {
+    padding-left: 7em;
+}
+
+.somos-section-tittles {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.somos-section-tittles h2 {
+    color: #847F7F;
+    text-shadow: #676060 1px 1px 1px;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.somos-section-tittles>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-top: 40px;
+}
+
+.somos-section-tittles>div h3 {
+    color: #DC2B3D;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.somos-section-tittles>div button {
+    background-color: #49AF25;
+    border: 1px solid #707070;
+    border-radius: 15px;
+    width: 203px;
+    height: 74px;
+    cursor: pointer;
+}
+
+#menu {
+    background-color: #070707;
+    padding: 4rem 0;
+}
+
+.border {
+    border: 2px solid #DC2B3D;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+#menu h2,
+h3 {
+    color: #DC2B3D;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.menu-first-container-tittle {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.albahaca {
+    max-height: 78px;
+}
+
+.menu-first-container article {
+    display: flex;
+    margin: 0 20px;
+}
+
+.menu-first-container article div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 40px;
+}
+
+.menu-first-container article p {
+    color: #FEF8F8;
+    font-size: 30px;
+    width: 420px;
+    margin-top: 1.5rem;
+    line-height: 2.5rem;
+}
+
+.menu-first-container-imagenes-deco {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 30px;
+}
+
+.queso {
+    height: 82px;
+}
+
+.verduras-cortadas {
+    height: 162px;
+    align-self: flex-end;
+}
+
+.menu-second-container>h3 {
+    margin: 25px 0;
+    font-size: 35px;
+}
+
+.menu-second-container>article {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+    margin-right: 2rem;
+    margin-bottom: 4rem;
+}
+
+.menu-second-container>article>h3 {
+    font-size: 30px;
+    text-align: start;
+    margin-bottom: 3rem;
+    color: #FEF8F8;
+    font-weight: normal;
+    margin-left: 1rem;
+}
+
+.menu-second-container>article>div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.menu-second-container>article>div>div {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.menu-second-container>article>div>div h4 {
+    font-size: 30px;
+    color: #707070;
+    max-width: 223px;
+}
+
+.capresse {
+    margin-right: 5rem;
+}
+
+.menu-second-container>article>h2 {
+    margin: 2rem 0 4rem 0;
+}
+
+.menu-second-container-pizzas>div {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.menu-second-container-pizzas {
+    display: flex;
+    justify-content: space-around !important;
+    margin-right: 3rem;
+}
+
+.pimiento {
+    max-height: 117px;
+    position: absolute;
+    right: 90%;
+}
+
+.minutas-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.minutas-container h4 {
+    font-size: 35px;
+    color: #DC2B3D;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contact-section {
+    padding-bottom: 3rem;
+}
+
+.contact-section-encontranos-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    margin-bottom: 7rem;
+}
+
+.contact-section-encontranos-container>div {
+    display: flex;
+    gap: 1rem;
+}
+
+.contact-section-encontranos-container h3 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #707070;
+}
+
+.contact-section {
+    background-color: #070707;
+    position: relative;
+}
+
+.contact-section-comida-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-section-comida-container>div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 77%;
+    gap: 3rem;
+}
+
+.deco-limon {
+    max-height: 250px;
+    margin-left: 3rem;
+}
+
+.limon {
+    max-height: 140px;
+    margin-right: 3rem;
+}
+
+.form-map-container {
+    display: flex;
+    max-width: 1500px;
+    margin: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.map-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.map-container>h4 {
+    color: #FEF8F8;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container>h3 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #FEF8F8;
+}
+
+.form-container>p {
+    font-size: 25px;
+    color: #FEF8F8;
+    margin: 1rem 0;
+}
+
+#contacto {
+    display: flex;
+    flex-direction: column;
+}
+
+#contacto input {
+    width: 463px;
+    height: 37px;
+    background-color: #070707;
+    border: 1px solid #FBF5F5;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    color: #FEF8F8;
+}
+
+#contacto input::placeholder {
+    color: #FBF6F6;
+}
+
+#mensaje {
+    width: 463px;
+    height: 104px;
+    background-color: #070707;
+    border: 1px solid #FBF5F5;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+#mensaje::placeholder {
+    color: #FBF6F6;
+}
+
+#contacto button {
+    align-self: flex-end;
+    width: 141px;
+    height: 48px;
+    margin-right: 1rem;
+    border-radius: 20px;
+    background-color: #fff;
+    border: 1px solid #707070;
+    color: #DC2B3D;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+#contacto button:hover {
+    background-color: #DC2B3D;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+footer {
+    background-color: #A81818;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 3rem;
+    padding-top: 2rem;
+}
+
+.footer-logo picture {
+    display: flex;
+    justify-content: center;
+    width: 205px;
+}
+
+.limon-footer {
+    max-height: 95px;
+}
+
+.pizza {
+    max-height: 137px;
+}
+
+.footer-text {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+}
+
+.footer-text h3 {
+    color: #FEF9FA;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.footer-text div {
+    width: 290px;
+}
+
+.footer-text p {
+    color: #FEF9FA;
+    font-size: 25px;
+    text-align: center;
+}
+
+.footer-text p a {
+    color: #FEF8F8;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+/* MEDIA SCREEN ONLY */
+
+@media screen and (max-width: 1500px) {
+    .deco-limon {
+        max-height: 200px;
+        margin-left: 0;
+    }
+
+    .limon {
+        max-height: 100px;
+        margin-right: 0;
+    }
+
+    .contact-section-comida-container>div {
+        gap: 1rem;
+    }
+
+    .contact-section-comida-container>div>img {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .quienes-section-container {
+        flex-direction: column;
+    }
+
+    .quienes-section-text-container {
+        margin-top: 50px;
+    }
+
+    .quienes-section-text-container h2 {
+        text-align: center;
+    }
+
+    .quienes-section-text-container p {
+        margin-left: 30px;
+    }
+
+    .queso {
+        display: none;
+    }
+
+    .verduras-cortadas {
+        display: none;
+    }
+
+    .deco-limon {
+        max-height: 150px;
+    }
+
+    .limon {
+        max-height: 80px;
+    }
+
+    .contact-section-comida-container>div {
+        bottom: 87%;
+    }
+
+    .contact-section-comida-container>div>img {
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .main-hero {
+        flex-wrap: wrap;
+    }
+
+    .somos-section-container {
+        flex-wrap: wrap;
+    }
+
+    .somos-section-container>img {
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    .menu-first-container article {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-first-container article img {
+        height: 150px;
+    }
+
+    .menu-first-container article p {
+        font-size: 22px;
+        line-height: 2rem;
+        width: auto;
+    }
+
+    #menu h2,
+    h3 {
+        font-size: 30px;
+    }
+
+    .minutas-container img {
+        max-height: 120px;
+    }
+
+    .form-map-container {
+        justify-content: center;
+        margin-top: 5rem;
+    }
+
+    .footer-text p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .contact-section-encontranos-container {
+        margin-bottom: 3rem;
+        padding: 1rem;
+    }
+
+    .contact-section-comida-container>div {
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    .contact-section-encontranos-container img {
+        max-height: 45px;
+    }
+
+    .contact-section-encontranos-container h3 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .header-logo {
+        width: 130px;
+        margin: 0 15px 0 5px;
+    }
+
+    .header-nav>ul {
+        justify-content: space-between;
+    }
+
+    .header-nav a {
+        font-size: 18px;
+    }
+
+    .header {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .main-hero {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .main-hero-subtittle {
+        margin-bottom: 30px;
+    }
+
+    iframe {
+        width: auto;
+    }
+
+    .somos-section-tittles h2 {
+        font-size: 25px;
+    }
+
+    .somos-section-tittles h3 {
+        font-size: 25px;
+    }
+
+    .somos-section-tittles>div {
+        gap: 30px;
+    }
+
+    .somos-section-tittles>div h3 {
+        font-size: 23px;
+    }
+
+    .somos-section-tittles>div button {
+        background-color: #49AF25;
+        border: 1px solid #707070;
+        border-radius: 15px;
+        width: 130px;
+        height: 50px;
+        cursor: pointer;
+
+    }
+
+    .somos-section-tittles>div img {
+        height: 40px;
+    }
+
+    .menu-first-container article {
+        flex-direction: column-reverse;
+    }
+
+    .menu-first-container article img {
+        margin-bottom: 1rem;
+    }
+
+    .menu-first-container-pizza {
+        flex-direction: column !important;
+    }
+
+    .border {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .albahaca {
+        max-width: 70px;
+        max-height: 50px;
+    }
+
+    .aceitunas {
+        max-width: 70px;
+        max-height: 700px;
+    }
+
+    .menu-first-container-tittle h2 {
+        font-size: 20px;
+    }
+
+    .menu-first-container article div {
+        margin: 0;
+    }
+
+    .menu-first-container-imagenes-deco {
+        margin: 2rem 0;
+    }
+
+    .pimiento {
+        display: none;
+    }
+
+    .menu-second-container>article>h3 {
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    .minutas-container img {
+        max-height: 80px;
+    }
+
+    .minutas-container h4 {
+        font-size: 25px;
+    }
+
+    .condimentos {
+        margin-top: 1rem;
+        max-height: 100px;
+    }
+
+    .limon-footer {
+        height: 60px;
+    }
+
+    .pizza {
+        height: 100px;
+    }
+
+    .footer-text {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .contact-section-encontranos-container img {
+        max-height: 35px;
+    }
+
+    .contact-section-encontranos-container>div {
+        gap: 0.2rem;
+        align-items: center;
+
+    }
+
+    .contact-section-encontranos-container h3 {
+        font-size: 18px;
+    }
+
+    .form-container h3 {
+        margin-top: 2rem;
+        font-size: 25px;
+    }
+
+    .form-container h4 {
+        margin: 2rem 0;
+        font-size: 25px;
+    }
+
+    .form-container p {
+        font-size: 15px;
+    }
+
+    #contacto {
+        align-items: center;
+    }
+
+    #contacto input {
+        width: 250px;
+    }
+
+    #contacto textarea {
+        width: 250px;
+    }
+
+    #contacto button {
+        align-self: center;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .quienes-section-img-container>img {
+        max-height: 250px;
+        position: absolute;
+        left: 50%;
+        top: 25%;
+        background-color: #fff;
+        padding: 5px;
+    }
+
+    .quienes-section-text-container {
+        margin-right: 1rem;
+    }
+
+    .menu-second-container>article>div>div h4 {
+        font-size: 25px;
+    }
+
+    .menu-second-container-pizzas {
+        margin-right: 0;
+    }
+
+    .minutas-container h4 {
+        font-size: 20px;
+    }
+
+    .minutas-container img {
+        max-height: 55px;
+    }
+
+    .footer-logo {
+        justify-content: space-between;
+        margin: 0;
+        padding: 1rem 0;
+    }
+
+    .footer-logo picture {
+        width: 140px;
+    }
+
+    .logoPaulinas {
+        width: 140px;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+    *{
+        max-width: 350px;
+    }
+    .header {
+        flex-direction: column;
+    }
+
+    .header-nav ul {
+        margin: 1em;
+    }
+
+    .header-nav ul a {
+        width: 65px;
+        display: block;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .quienes-section-img-container img {
+        left: 38%;
+    }
+
+    .somos-section-tittles>div {
+        margin: 2rem 1em;
+    }
+
+    .menu-second-container>article>div {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .menu-second-container>article {
+        flex-direction: column;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    .menu-second-container>article>div>div {
+        flex-direction: column;
+    }
+
+    .capresse {
+        margin: 0;
+    }
+
+    .deco-limon {
+        display: none;
+    }
+
+    .limon {
+        display: none
+    }
+
+    iframe {
+        width: 250px;
+    }
+
+    .pizza {
+        height: 60px;
+    }
+
+}
