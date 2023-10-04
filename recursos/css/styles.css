@@ -301,7 +301,7 @@ h3 {
     margin-left: 1rem;
 }
 
-.menu-second-container>article>div {
+.menu-second-container-empanadas {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -335,8 +335,8 @@ h3 {
 
 .menu-second-container-pizzas {
     display: flex;
-    justify-content: space-around !important;
-    margin-right: 3rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .pimiento {
@@ -388,6 +388,7 @@ h3 {
 .contact-section-comida-container {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 5rem;
 }
 
 .contact-section-comida-container>div {
@@ -395,7 +396,7 @@ h3 {
     display: flex;
     justify-content: center;
     position: absolute;
-    bottom: 77%;
+    bottom: 70%;
     gap: 3rem;
 }
 
@@ -580,7 +581,7 @@ footer {
     }
 
     .contact-section-comida-container>div>img {
-        width: 200px;
+        width: 220px;
     }
 }
 
@@ -675,6 +676,11 @@ footer {
 }
 
 @media screen and (max-width: 770px) {
+    .header{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
     .contact-section-encontranos-container {
         margin-bottom: 3rem;
         padding: 1rem;
@@ -695,14 +701,11 @@ footer {
 }
 
 @media screen and (max-width: 700px) {
-    .header-logo {
-        width: 130px;
-        margin: 0 15px 0 5px;
+     .header-logo {
+        width: 170px;
     }
 
-    .header-nav>ul {
-        justify-content: space-between;
-    }
+    
 
     .header-nav a {
         font-size: 18px;
@@ -722,7 +725,7 @@ footer {
     .main-hero-subtittle {
         margin-bottom: 30px;
     }
-
+    
     iframe {
         width: auto;
     }
@@ -757,7 +760,7 @@ footer {
         height: 40px;
     }
 
-    .menu-first-container article {
+    .column-reverse {
         flex-direction: column-reverse;
     }
 
@@ -766,7 +769,7 @@ footer {
     }
 
     .menu-first-container-pizza {
-        flex-direction: column !important;
+        flex-direction: column ;
     }
 
     .border {
